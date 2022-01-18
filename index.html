@@ -19,8 +19,8 @@
         <title>Calculadora de IMC</title>
     </head>
     <body>
-        <div id="container">
-            <form action="" id="formulario">
+        <main id="container">
+            <div action="" id="formulario">
                 <h1>Calculadora de IMC</h1>
                 <div class="form-group">
                     <label for="nome">Nome</label>
@@ -70,9 +70,7 @@
                     />
                 </div>
                 <div class="btn-group">
-                    <button type="submit" class="botao" id="btnEnviar">
-                        Calcular
-                    </button>
+                    <button class="botao" id="btnEnviar">Calcular</button>
                     <button type="reset" class="botao" id="btnLimpar">
                         Limpar
                     </button>
@@ -87,9 +85,9 @@
                         value="0.0"
                         disabled
                     />
-                    <span id='aviso'>o</span>
+                    <span id="aviso"></span>
                 </div>
-            </form>
+            </div>
             <div id="resultado">
                 <h2 id="id" class="pessoa">IMC</h2>
                 <p id="nome" class="pessoa"></p>
@@ -98,7 +96,7 @@
                 <p id="altura" class="pessoa"></p>
                 <p id="imc" class="pessoa"></p>
             </div>
-        </div>
+        </main>
+        <script src="script.js"></script>
     </body>
-    <script src="/script.js"></script>
 </html>

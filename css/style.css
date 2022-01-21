@@ -24,14 +24,14 @@ body #container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 130vh;
+  height: 100vh;
 }
 
 body #container #formulario {
   background-color: #FFFF1F;
   border-radius: 15px;
   width: 400px;
-  height: 550px;
+  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -11,88 +11,43 @@
         <!--Font import-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"/>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+            rel="stylesheet"
+        />
 
         <title>Calculadora de IMC</title>
     </head>
     <body>
         <main id="container">
-            <div action="" id="formulario">
+            <form action="" id="formulario" onsubmit="return validateForm()">
                 <h1>Calculadora de IMC</h1>
                 <div class="form-group">
-                    <label for="nome">Nome</label>
-                    <input
-                        type="text"
-                        name="nome"
-                        id="nome"
-                        class="input"
-                        required
-                        autofocus
-                    />
-                </div>
-                <div class="form-group">
                     <label for="idade">Idade</label>
-                    <input
-                        type="number"
-                        name="idade"
-                        id="idade"
-                        min="1"
-                        max="120"
-                        class="input"
-                        required
-                    />
+                    <input type="number" name="idade" id="idade" min="1" max="120" class="input" required />
                 </div>
                 <div class="form-group">
-                    <label for="altura">Altura</label>
-                    <input
-                        type="number"
-                        name="altura"
-                        id="altura"
-                        max="300"
-                        class="input"
-                        step=".01"
-                        required
-                    />
+                    <label for="altura">Altura (cm)</label>
+                    <input type="number" name="altura" id="altura" max="300" class="input" step=".01" required />
                 </div>
                 <div class="form-group">
-                    <label for="peso">Peso</label>
-                    <input
-                        type="number"
-                        name="peso"
-                        id="peso"
-                        max="400"
-                        class="input"
-                        step=".01"
-                        required
-                    />
+                    <label for="peso">Peso (kg)</label>
+                    <input type="number" name="peso"  id="peso" max="400"  class="input" step=".01" required />
                 </div>
                 <div class="btn-group">
-                    <button class="botao" id="btnEnviar">Calcular</button>
+                    <button type="button" class="botao" id="btnEnviar">
+                        Calcular
+                    </button>
                     <button type="reset" class="botao" id="btnLimpar">
                         Limpar
                     </button>
                 </div>
                 <div class="form-group">
                     <label for="imc">IMC</label>
-                    <input
-                        type="number"
-                        name="imc"
-                        id="resultadoImc"
-                        class="input"
-                        value="0.0"
-                        disabled
-                    />
+                    <input type="number"  name="imc" id="resultadoImc" class="input" value="0.0" disabled />
                     <span id="aviso"></span>
                 </div>
-            </div>
-            <div id="resultado">
-                <h2 id="id" class="pessoa">IMC</h2>
-                <p id="nome" class="pessoa"></p>
-                <p id="idade" class="pessoa"></p>
-                <p id="peso" class="pessoa"></p>
-                <p id="altura" class="pessoa"></p>
-                <p id="imc" class="pessoa"></p>
-            </div>
+            </form>
         </main>
         <script src="script.js"></script>
     </body>
